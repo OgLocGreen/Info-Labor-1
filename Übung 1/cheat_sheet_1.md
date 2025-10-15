@@ -67,11 +67,3 @@
 - **NOR:** wie OR, jedoch invertiert.
 
 ---
-
-## 6. Zusammenfassung
-
-- Alle Gesetze sind **dual** zueinander (Tausch 0↔1, ∧↔∨).  
-- NAND und NOR sind **funktional vollständig** – jedes logische Netz kann damit aufgebaut werden.  
-- De Morgan ist die wichtigste Umformungsregel bei Negationen.
-
----

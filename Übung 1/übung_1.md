@@ -5,7 +5,7 @@
 ## Teil 1 – Grundschaltungen verstehen
 
 **Aufgabe 1:** Zeichne für jede der folgenden logischen Ausdrücke eine Schaltung mit UND-, ODER- und NICHT-Gattern.  
-Ergänze jeweils die Wahrheitstabelle.
+Ergänze jeweils die Wahrheitstabelle, Schaltzeichen, Timming Diagramm, Schaltung
 
 a) `y = a ∧ b`  
 b) `y = a ∨ b`  
