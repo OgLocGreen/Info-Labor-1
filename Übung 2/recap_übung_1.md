@@ -1,5 +1,5 @@
 
-# Übung 3 – Von Boolescher Logik zur Programmierung (Recap & Anwendung)
+# Recap Übung 1 – Von Boolescher Logik zur Programmierung (Recap & Anwendung)
 
 ## 1. Kurzer Recap der wichtigsten Gesetze
 
