@@ -72,6 +72,34 @@ def new_edge(edge_id: str, src: str, tgt: str):
         "data": {"id": edge_id, "source": src, "target": tgt},
     }
 
+def _node_maps(elements) -> Tuple[Dict[str, str], Dict[str, str]]:
+    """Build helper maps from both node IDs and labels to canonical node IDs.
+    Returns (by_id, by_label) where values are node IDs. Labels are treated case-sensitive.
+    """
+    by_id: Dict[str, str] = {}
+    by_label: Dict[str, str] = {}
+    for el in elements or []:
+        data = el.get("data", {})
+        if "source" in data:
+            continue  # edge
+        nid = data.get("id")
+        if nid:
+            by_id[nid] = nid
+        lbl = data.get("label")
+        if lbl:
+            # map label to node id (first come, first serve)
+            by_label.setdefault(lbl, nid)
+    return by_id, by_label
+
+def _resolve_node_ref(ref: str, elements) -> str:
+    """Resolve an input string to a node id, trying id first then label.
+    Returns node id or empty string if not found.
+    """
+    by_id, by_label = _node_maps(elements)
+    if ref in by_id:
+        return ref
+    return by_label.get(ref, "")
+
 def elements_to_graph(elements) -> nx.DiGraph:
     G = nx.DiGraph()
     for el in elements:
@@ -265,13 +293,22 @@ app.layout = html.Div([
         html.Div([
             cyto.Cytoscape(
                 id="cy",
-                layout={"name": "preset"},
-                style={"width": "100%", "height": "520px", "border": "1px solid #ddd"},
+                # Keep the viewport static: no auto-fit, no zoom/pan changes
+                layout={"name": "preset", "fit": False},
+                # Fix width/height so the canvas doesn't grow/shrink with container
+                style={"width": "800px", "height": "520px", "border": "1px solid #ddd"},
                 elements=default_elements,
-                stylesheet=stylesheet,
-                responsive=True,
-                minZoom=0.2,
-                maxZoom=2.0,
+                stylesheet=styleode
+                sheet,
+                # Disable responsive resizing to keep the canvas size stable
+                responsive=False,
+                # Lock the zoom level and disable user zoom/pan so the view stays static
+                zoom=1,
+                minZoom=1,
+                maxZoom=1,
+                zoomingEnabled=False,
+                userZoomingEnabled=False,
+                userPanningEnabled=False,
                 wheelSensitivity=0.2,
             ),
             html.Div(id="notation", style={"marginTop": "12px", "whiteSpace": "pre-wrap", "fontFamily": "monospace"}),
@@ -329,9 +366,14 @@ def add_edge(n_clicks, src, tgt, els):
         return "Keine Elemente geladen.", els, els
     if not src or not tgt:
         return "Bitte Quelle und Ziel angeben.", els, els
-    nodes = {el["data"]["id"] for el in els if "data" in el and "id" in el["data"] and "source" not in el["data"]}
-    if src not in nodes or tgt not in nodes:
-        return "Quelle/Ziel nicht gefunden.", els, els
+    # Allow using either node IDs or labels in the inputs
+    src_id = _resolve_node_ref(src.strip(), els)
+    tgt_id = _resolve_node_ref(tgt.strip(), els)
+    if not src_id or not tgt_id:
+        return "Quelle/Ziel nicht gefunden (ID oder Label prüfen).", els, els
+    # prevent self-loop
+    if src_id == tgt_id:
+        return "Quelle und Ziel dürfen nicht identisch sein.", els, els
     # unique edge id
     existing_eids = {el["data"]["id"] for el in els if "data" in el and "source" in el["data"]}
     idx = 1
@@ -339,10 +381,10 @@ def add_edge(n_clicks, src, tgt, els):
     while eid in existing_eids:
         idx += 1
         eid = f"e{idx}"
-    edge = new_edge(eid, src, tgt)
+    edge = new_edge(eid, src_id, tgt_id)
     els2 = els + [edge]
     # try detect simple violations early (optional)
-    return f"Kante hinzugefügt: {src} → {tgt}", els2, els2
+    return f"Kante hinzugefügt: {src_id} → {tgt_id}", els2, els2
 
 @app.callback(
     Output("live-output", "children"),
@@ -356,7 +398,8 @@ def live_eval(n_clicks, txt_assign, els):
     try:
         G = elements_to_graph(els or [])
         # parse assignment: A=0, B=1 or by node id
-        assign = {}
+        assign: Dict[str, int] = {}
+        by_id, by_label = _node_maps(els or [])
         if txt_assign:
             for token in txt_assign.replace("\n", ",").split(","):
                 token = token.strip()
@@ -365,7 +408,19 @@ def live_eval(n_clicks, txt_assign, els):
                 if "=" not in token:
                     continue
                 k, v = token.split("=", 1)
-                assign[k.strip()] = int(v.strip())
+                key = k.strip()
+                try:
+                    val = int(v.strip())
+                except ValueError:
+                    continue
+                # resolve by id first, then by label
+                if key in by_id:
+                    assign[by_id[key]] = val
+                elif key in by_label:
+                    assign[by_label[key]] = val
+                else:
+                    # unknown key, ignore
+                    continue
         values = eval_circuit(G, assign)
         inputs, outputs = find_ios(G)
 
