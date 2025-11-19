@@ -8,7 +8,8 @@ Je nach Nummer des Werkstücks wird anschließend eine unterschiedliche Anzahl v
 
 - Ist die Nummer durch 4 teilbar, wird das Teil **viermal** gebohrt.
 - Ist die Nummer **nicht** durch 4, aber durch 2 teilbar, wird das Teil **zweimal** gebohrt.
-- Handelt es sich bei der Nummer um eine **Primzahl**, wird das Werkstück so oft gebohrt, wie es dem Zahlenwert der Nummer selbst entspricht.
+- Ist die Nummer nicht durch 2 und 4 Teibar dann wird direkt abtransportiert.
+- (Optional) Handelt es sich bei der Nummer um eine **Primzahl**, wird das Werkstück so oft gebohrt, wie es dem Zahlenwert der Nummer selbst entspricht.
 
 Nachdem alle notwendigen Bohrungen abgeschlossen sind, wird ein Roboter zum Abtransport des Werkstücks verwendet. Hierfür wird die Unterfunktion `Abtransport` aufgerufen. Diese veranlasst den Roboter, das fertig bearbeitete Teil aus der Vorrichtung zu entnehmen und an den vorgesehenen Ablageort zu bringen.
 
