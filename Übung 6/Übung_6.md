@@ -14,7 +14,7 @@ Nachdem alle notwendigen Bohrungen abgeschlossen sind, wird ein Roboter zum Abtr
 
 > Hinweis: Orientiere dich zusätzlich an der Ablaufskizze.
 
-![Ablaufskizze v3](Ablauf_Skizze_v3.drawio.png)
+![Ablaufskizze v3](Ablauf_Skizze_v3.png)
 
 ---
 
