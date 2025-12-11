@@ -46,8 +46,10 @@ Für zusätzliche Informationen, Schaltpläne, Tutorials und Foren:
 #### C / C++
 - *Jürgen Wolf und Martin Guddat:* **Grundkurs C++**  
 
-#### Embedded / Automotive Systeme
+#### Embedded Systeme
 - *Joachim Wietzke:* **Automotive Embedded Systeme – Effizientes Framework: Vom Design zur Implementierung**
+
+- *Ansgar Meroth und Petre Sora:* **Sensornetzwerke in Theorie und Praxis - Embedded Systems-Projekte erfolgreich realisieren**
 
 ---
 
