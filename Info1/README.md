@@ -27,6 +27,7 @@ Alle Übungen mit Aufgabe, Lösung und passenden Hilfsmitteln. Welche Themen wan
 
 | Nr. | Thema | Aufgabe | Lösung | Hilfsmittel |
 |---|---|---|---|---|
+| 00 | Logik im Alltag: Vom Satz zur booleschen Funktion (Einstieg, FUB & Ablaufdiagramm) | [Aufgabe](Aufgaben/00_Logik_im_Alltag.md) | [Lösung](Lösungen/00_Logik_im_Alltag_Lösung.md) | – |
 | 01 | Boolesche Algebra & Grundschaltungen | [Aufgabe](Aufgaben/01_Boolesche_Algebra.md) | [Lösung](Lösungen/01_Boolesche_Algebra_Lösung.md) | [Cheatsheet Boolesche Algebra](Hilfsmittel/01_Cheatsheet_Boolesche_Algebra.md) |
 | 02 | Register, Binärlogik und Datentypen<br>Recap: Von Boolescher Logik zur Programmierung | [Zahlen und Datentypen](Aufgaben/02_Zahlen_und_Datentypen.md)<br>[Recap Logik zur Programmierung](Aufgaben/02_Recap_Logik_zur_Programmierung.md) | [Zahlen und Datentypen](Lösungen/02_Zahlen_und_Datentypen_Lösung.md)<br>[Recap Logik zur Programmierung](Lösungen/02_Recap_Logik_zur_Programmierung_Lösung.md) | [Cheatsheet Register und Datentypen](Hilfsmittel/02_Cheatsheet_Register_und_Datentypen.md) |
 | 03 | 1-Bit-Komparator, Flipflops und Datentypen | [Aufgabe](Aufgaben/03_Komparator_Flipflops_Datentypen.md) | [Lösung](Lösungen/03_Komparator_Flipflops_Datentypen_Lösung.md) | – |

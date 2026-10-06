@@ -1,0 +1,30 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='525' height='430' viewBox='0 0 525 430' role='img' aria-label='Ablaufdiagramm: Feiern gehen, wenn Zeit und Freibier'>
+<title>Ablaufdiagramm: Feiern gehen, wenn Zeit und Freibier</title>
+<rect width='100%' height='100%' rx='8' fill='white'/>
+<defs><marker id='pf' markerWidth='10' markerHeight='8' refX='9' refY='4' orient='auto'><path d='M0,0 L10,4 L0,8 z' fill='#222222'/></marker></defs>
+<rect x='120' y='16.0' width='110' height='36' rx='18' fill='#eef3fb' stroke='#1f3b73' stroke-width='2'/>
+<text x='175' y='39.0' text-anchor='middle' font-size='14' font-weight='bold' font-family='Segoe UI, Helvetica, Arial, sans-serif' fill='#1f3b73'>Start</text>
+<path d='M175.0,52.0 L175.0,86.0' fill='none' stroke='#222222' stroke-width='1.8' marker-end='url(#pf)'/>
+<polygon points='175,86 285.0,123.0 175,160 65.0,123.0' fill='white' stroke='#1f3b73' stroke-width='2'/>
+<text x='175' y='128.0' text-anchor='middle' font-size='14' font-family='Segoe UI, Helvetica, Arial, sans-serif' fill='#222222'>Habe ich Freitag Zeit?</text>
+<text x='183.0' y='176.0' text-anchor='start' font-size='13' font-style='italic' font-family='Segoe UI, Helvetica, Arial, sans-serif' fill='#222222'>ja</text>
+<path d='M175.0,160.0 L175.0,194.0' fill='none' stroke='#222222' stroke-width='1.8' marker-end='url(#pf)'/>
+<polygon points='175,194 285.0,231.0 175,268 65.0,231.0' fill='white' stroke='#1f3b73' stroke-width='2'/>
+<text x='175' y='236.0' text-anchor='middle' font-size='14' font-family='Segoe UI, Helvetica, Arial, sans-serif' fill='#222222'>Gibt es Freibier?</text>
+<text x='183.0' y='284.0' text-anchor='start' font-size='13' font-style='italic' font-family='Segoe UI, Helvetica, Arial, sans-serif' fill='#222222'>ja</text>
+<path d='M175.0,268.0 L175.0,302.0' fill='none' stroke='#222222' stroke-width='1.8' marker-end='url(#pf)'/>
+<rect x='90.0' y='302.0' width='170' height='40' fill='white' stroke='#1f3b73' stroke-width='2'/>
+<text x='175.0' y='327.0' text-anchor='middle' font-size='14' font-family='Segoe UI, Helvetica, Arial, sans-serif' fill='#222222'>Feiern gehen</text>
+<rect x='335.0' y='302.0' width='170' height='40' fill='white' stroke='#1f3b73' stroke-width='2'/>
+<text x='420.0' y='327.0' text-anchor='middle' font-size='14' font-family='Segoe UI, Helvetica, Arial, sans-serif' fill='#222222'>Zuhause bleiben</text>
+<path d='M285.0,123.0 L420.0,123.0' fill='none' stroke='#222222' stroke-width='1.8'/>
+<text x='291.0' y='117.0' text-anchor='start' font-size='13' font-style='italic' font-family='Segoe UI, Helvetica, Arial, sans-serif' fill='#222222'>nein</text>
+<path d='M285.0,231.0 L420.0,231.0' fill='none' stroke='#222222' stroke-width='1.8'/>
+<text x='291.0' y='225.0' text-anchor='start' font-size='13' font-style='italic' font-family='Segoe UI, Helvetica, Arial, sans-serif' fill='#222222'>nein</text>
+<path d='M420.0,123.0 L420.0,300.0' fill='none' stroke='#222222' stroke-width='1.8' marker-end='url(#pf)'/>
+<circle cx='420.0' cy='231.0' r='3.2' fill='#222222'/>
+<path d='M175.0,342.0 L175.0,376.0' fill='none' stroke='#222222' stroke-width='1.8' marker-end='url(#pf)'/>
+<path d='M420.0,342.0 L420.0,394.0 L232.0,394.0' fill='none' stroke='#222222' stroke-width='1.8' marker-end='url(#pf)'/>
+<rect x='120' y='376.0' width='110' height='36' rx='18' fill='#eef3fb' stroke='#1f3b73' stroke-width='2'/>
+<text x='175' y='399.0' text-anchor='middle' font-size='14' font-weight='bold' font-family='Segoe UI, Helvetica, Arial, sans-serif' fill='#1f3b73'>Ende</text>
+</svg>
