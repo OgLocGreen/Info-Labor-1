@@ -15,6 +15,9 @@
 | **Neutralität / Extremal** | `a∧1=a`, `a∨0=a`, `a∧0=0`, `a∨1=1` | 0/1 verhalten sich wie Multiplikation/Addition |
 | **Komplementär** | `a∧¬a=0`, `a∨¬a=1` | Gegensatz hebt sich auf |
 | **Absorption** | `a∨(a∧b)=a` | Überflüssige Teile verschwinden |
+| **Idempotenz** | `a∧a=a`, `a∨a=a` | Wiederholung ändert nichts |
+
+Alle Gesetze ausführlich: [Cheatsheet Boolesche Algebra](../Hilfsmittel/01_Cheatsheet_Boolesche_Algebra.md)
 
 ---
 
@@ -27,6 +30,8 @@
 > - **Nur wenn A und B bei 1 sind, aber nicht C.**  
 > - Wenn **D und A und B**, dann **geht er *nicht* an**.  
 > - Wenn **nur D und A**, dann **geht er an**.
+>
+> *Hinweis: „nur D und A“ heißt: D und A sind 1, alle anderen Eingänge (B und C) sind 0.*
 
 ### Ziel
 

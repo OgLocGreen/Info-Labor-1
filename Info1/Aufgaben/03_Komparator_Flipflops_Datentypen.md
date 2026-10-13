@@ -4,7 +4,7 @@
 
 ---
 
-## Teil A: 1-Bit-Komparator (Partner- oder 3er-Team)
+## Teil A: 1-Bit-Komparator
 
 Gegeben:  
 Eingänge **A**, **B** (je 1 Bit).  
