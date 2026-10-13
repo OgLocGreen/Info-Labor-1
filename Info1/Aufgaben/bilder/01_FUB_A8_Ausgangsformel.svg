@@ -1,0 +1,40 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='402' height='297' viewBox='0 0 402 297' role='img' aria-label='Schaltung Aufgabe 8, wie gegeben: y = (a ∧ b) ∨ (¬a ∧ c) ∨ (b ∧ c)'>
+<title>Schaltung Aufgabe 8, wie gegeben: y = (a ∧ b) ∨ (¬a ∧ c) ∨ (b ∧ c)</title>
+<rect width='100%' height='100%' rx='8' fill='white'/>
+<text x='26.2' y='43.0' text-anchor='end' font-size='15' font-family='Segoe UI, Helvetica, Arial, sans-serif' fill='#222222'><tspan font-weight='bold'>a</tspan></text>
+<circle cx='34.2' cy='38.0' r='2.6' fill='#222222'/>
+<text x='26.2' y='77.0' text-anchor='end' font-size='15' font-family='Segoe UI, Helvetica, Arial, sans-serif' fill='#222222'><tspan font-weight='bold'>b</tspan></text>
+<circle cx='34.2' cy='72.0' r='2.6' fill='#222222'/>
+<line x1='34.2' y1='38.0' x2='68.2' y2='38.0' stroke='#222222' stroke-width='1.8'/>
+<line x1='34.2' y1='72.0' x2='68.2' y2='72.0' stroke='#222222' stroke-width='1.8'/>
+<rect x='68.2' y='21.0' width='46' height='68.0' rx='2' fill='#eef3fb' stroke='#1f3b73' stroke-width='2'/>
+<text x='91.2' y='40.0' text-anchor='middle' font-size='16' font-weight='bold' font-family='Segoe UI, Helvetica, Arial, sans-serif' fill='#1f3b73'>&amp;</text>
+<text x='26.2' y='128.0' text-anchor='end' font-size='15' font-family='Segoe UI, Helvetica, Arial, sans-serif' fill='#222222'><tspan font-weight='bold'>a</tspan></text>
+<circle cx='34.2' cy='123.0' r='2.6' fill='#222222'/>
+<line x1='34.2' y1='123.0' x2='68.2' y2='123.0' stroke='#222222' stroke-width='1.8'/>
+<rect x='68.2' y='110.8' width='46' height='24.5' rx='2' fill='#eef3fb' stroke='#1f3b73' stroke-width='2'/>
+<text x='91.2' y='129.8' text-anchor='middle' font-size='16' font-weight='bold' font-family='Segoe UI, Helvetica, Arial, sans-serif' fill='#1f3b73'>1</text>
+<circle cx='119.2' cy='123.0' r='5' fill='white' stroke='#1f3b73' stroke-width='2'/>
+<text x='26.2' y='162.0' text-anchor='end' font-size='15' font-family='Segoe UI, Helvetica, Arial, sans-serif' fill='#222222'><tspan font-weight='bold'>c</tspan></text>
+<circle cx='34.2' cy='157.0' r='2.6' fill='#222222'/>
+<line x1='124.2' y1='123.0' x2='173.2' y2='123.0' stroke='#222222' stroke-width='1.8'/>
+<line x1='34.2' y1='157.0' x2='173.2' y2='157.0' stroke='#222222' stroke-width='1.8'/>
+<rect x='173.2' y='106.0' width='46' height='68.0' rx='2' fill='#eef3fb' stroke='#1f3b73' stroke-width='2'/>
+<text x='196.2' y='125.0' text-anchor='middle' font-size='16' font-weight='bold' font-family='Segoe UI, Helvetica, Arial, sans-serif' fill='#1f3b73'>&amp;</text>
+<text x='26.2' y='213.0' text-anchor='end' font-size='15' font-family='Segoe UI, Helvetica, Arial, sans-serif' fill='#222222'><tspan font-weight='bold'>b</tspan></text>
+<circle cx='34.2' cy='208.0' r='2.6' fill='#222222'/>
+<text x='26.2' y='247.0' text-anchor='end' font-size='15' font-family='Segoe UI, Helvetica, Arial, sans-serif' fill='#222222'><tspan font-weight='bold'>c</tspan></text>
+<circle cx='34.2' cy='242.0' r='2.6' fill='#222222'/>
+<line x1='34.2' y1='208.0' x2='68.2' y2='208.0' stroke='#222222' stroke-width='1.8'/>
+<line x1='34.2' y1='242.0' x2='68.2' y2='242.0' stroke='#222222' stroke-width='1.8'/>
+<rect x='68.2' y='191.0' width='46' height='68.0' rx='2' fill='#eef3fb' stroke='#1f3b73' stroke-width='2'/>
+<text x='91.2' y='210.0' text-anchor='middle' font-size='16' font-weight='bold' font-family='Segoe UI, Helvetica, Arial, sans-serif' fill='#1f3b73'>&amp;</text>
+<line x1='114.2' y1='55.0' x2='278.2' y2='55.0' stroke='#222222' stroke-width='1.8'/>
+<line x1='219.2' y1='140.0' x2='278.2' y2='140.0' stroke='#222222' stroke-width='1.8'/>
+<line x1='114.2' y1='225.0' x2='278.2' y2='225.0' stroke='#222222' stroke-width='1.8'/>
+<rect x='278.2' y='38.0' width='46' height='204.0' rx='2' fill='#eef3fb' stroke='#1f3b73' stroke-width='2'/>
+<text x='301.2' y='57.0' text-anchor='middle' font-size='16' font-weight='bold' font-family='Segoe UI, Helvetica, Arial, sans-serif' fill='#1f3b73'>≥1</text>
+<line x1='324.2' y1='140.0' x2='370.2' y2='140.0' stroke='#222222' stroke-width='1.8'/>
+<circle cx='370.2' cy='140.0' r='2.6' fill='#222222'/>
+<text x='378.2' y='145.0' font-size='15' font-family='Segoe UI, Helvetica, Arial, sans-serif' fill='#222222'><tspan font-weight='bold'>y</tspan></text>
+</svg>

@@ -31,11 +31,12 @@
 | **Distributivgesetz** | „Ausmultiplizieren“ | `a∧(b∨c)=(a∧b)∨(a∧c)`<br>`a∨(b∧c)=(a∨b)∧(a∨c)` | Wie `a·(b+c)=a·b+a·c` |
 | **Neutralitätsgesetz** | 1 oder 0 ist neutral | `a∧1=a`, `a∨0=a` | Wie `a·1=a` oder `a+0=a` |
 | **Extremalgesetz** | 1 oder 0 dominiert | `a∧0=0`, `a∨1=1` | Wie `a·0=0` oder `a+1=1` (bei max. 1) |
-| **Doppelnegation** | Zweimal negieren = Original | `¬(¬a)=a` | Wie `-(-a)=a` |
+| **Doppelnegation** (doppelte Negation) | Zweimal negieren = Original | `¬(¬a)=a`, kurz `¬¬a=a` | Wie `-(-a)=a` – „nicht nicht da“ heißt „da“ |
 | **De Morgan-Gesetze** | Negation verteilt sich | `¬(a∧b)=¬a∨¬b`<br>`¬(a∨b)=¬a∧¬b` | Vergleichbar mit Umkehrung: „Nicht (A und B)“ ⇔ „Nicht A oder Nicht B“ |
 | **Komplementärgesetz** | Gegensatz hebt auf | `a∧¬a=0`, `a∨¬a=1` | Wie `x·(1−x)=0` oder `x+(1−x)=1` |
 | **Dualitätsprinzip** | Vertausche 0↔1 und ∧↔∨ | `¬0=1`, `¬1=0` | Spiegelung der Formeln |
 | **Absorptionsgesetz** | Teil verschluckt Rest | `a∨(a∧b)=a`, `a∧(a∨b)=a` | Wie `a+(a·b)=a` – „A bestimmt das Ergebnis“ |
+| **Konsensusregel** | Überflüssiger Term fällt weg | `(p∧q)∨(¬p∧r)∨(q∧r)=(p∧q)∨(¬p∧r)` | Der dritte Term `q∧r` heißt *Konsensusterm*. Er bringt nichts Neues: Ist `q∧r=1`, dann ist schon `p∧q=1` (bei `p=1`) oder `¬p∧r=1` (bei `p=0`). |
 
 ---
 
